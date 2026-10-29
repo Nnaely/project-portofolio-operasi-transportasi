@@ -1,0 +1,14 @@
+cohort_status,trips
+02_outside_source_month,93
+03_outside_card_cash,3448522
+04_outside_ratecodes_1_2,333102
+05_dst_transition_day,82063
+06_nonpositive_duration,60707
+07_nonpositive_distance,63174
+08_distance_over_100mi,29
+09_nonpositive_fare,56763
+10_fare_over_500usd,4
+11_duration_under_1min,16512
+12_duration_over_180min,5066
+13_unknown_zone,57811
+eligible,11044733

@@ -1,0 +1,13 @@
+period,route,city_extra_minutes,airport_extra_minutes
+train,LaGuardia → Manhattan,0,10.425447044595359
+train,LaGuardia → Manhattan,10,43.363013510251726
+train,LaGuardia → Manhattan,20,76.30057997590808
+train,JFK → Manhattan,0,15.884235483516719
+train,JFK → Manhattan,10,70.36041401857332
+train,JFK → Manhattan,20,124.8365925536299
+holdout,LaGuardia → Manhattan,0,9.268436320750741
+holdout,LaGuardia → Manhattan,10,41.60837385356652
+holdout,LaGuardia → Manhattan,20,73.9483113863823
+holdout,JFK → Manhattan,0,11.90501807214384
+holdout,JFK → Manhattan,10,64.1720899677764
+holdout,JFK → Manhattan,20,116.439161863409

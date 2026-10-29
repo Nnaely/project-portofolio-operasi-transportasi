@@ -1,0 +1,92 @@
+{
+  "checks": {
+    "source_row_count_matches_manifest": true,
+    "zone_lookup_unique": true,
+    "waterfall_reconciles": true,
+    "three_study_routes": true,
+    "positive_study_duration": true,
+    "no_dst_transition_records": true,
+    "group_trips_reconcile": true,
+    "daily_trips_reconcile": true,
+    "broad_contains_primary": true
+  },
+  "all_checks_passed": true,
+  "source_trips": 15168579,
+  "eligible_trips": 11044733,
+  "study_trips": 10148555,
+  "other_clean_route_trips": 896178,
+  "waterfall": [
+    {
+      "cohort_status": "02_outside_source_month",
+      "trips": 93
+    },
+    {
+      "cohort_status": "03_outside_card_cash",
+      "trips": 3448522
+    },
+    {
+      "cohort_status": "04_outside_ratecodes_1_2",
+      "trips": 333102
+    },
+    {
+      "cohort_status": "05_dst_transition_day",
+      "trips": 82063
+    },
+    {
+      "cohort_status": "06_nonpositive_duration",
+      "trips": 60707
+    },
+    {
+      "cohort_status": "07_nonpositive_distance",
+      "trips": 63174
+    },
+    {
+      "cohort_status": "08_distance_over_100mi",
+      "trips": 29
+    },
+    {
+      "cohort_status": "09_nonpositive_fare",
+      "trips": 56763
+    },
+    {
+      "cohort_status": "10_fare_over_500usd",
+      "trips": 4
+    },
+    {
+      "cohort_status": "11_duration_under_1min",
+      "trips": 16512
+    },
+    {
+      "cohort_status": "12_duration_over_180min",
+      "trips": 5066
+    },
+    {
+      "cohort_status": "13_unknown_zone",
+      "trips": 57811
+    },
+    {
+      "cohort_status": "eligible",
+      "trips": 11044733
+    }
+  ],
+  "raw_missing_zone_lookup_records": 0,
+  "study_repeated_selected_field_excess_records": 0,
+  "deduplication": "No records deduplicated: there is no stable public trip ID. Selected-field repeated signatures are an audit flag, not proof of duplicated journeys.",
+  "dst_policy": "Exclude any trip with pickup OR dropoff local date 2025-03-09 to avoid spring clock-change duration ambiguity. Other durations use local wall-clock elapsed seconds.",
+  "primary_filters": {
+    "payment_type": [
+      1,
+      2
+    ],
+    "rate_code": [
+      1,
+      2
+    ],
+    "duration_minutes": "1 <= minutes <= 180",
+    "trip_distance": "0 < miles <= 100",
+    "fare_amount": "0 < USD <= 500",
+    "zone": "both boroughs known, not Unknown/N/A",
+    "month": "pickup month matches source file"
+  },
+  "waterfall_note": "Mutually exclusive first-failure labels in SQL order; a record with several issues is counted only once."
+}

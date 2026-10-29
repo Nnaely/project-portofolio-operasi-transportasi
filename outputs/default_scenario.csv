@@ -1,0 +1,7 @@
+period,route,assumed_extra_minutes,scenario_fare_per_hour
+train,Manhattan → Manhattan,10,35.42043264238705
+train,LaGuardia → Manhattan,30,43.51516031122316
+train,JFK → Manhattan,30,53.64307801687752
+holdout,Manhattan → Manhattan,10,35.758453760801096
+holdout,LaGuardia → Manhattan,30,42.53681070542579
+holdout,JFK → Manhattan,30,50.38168555083108
