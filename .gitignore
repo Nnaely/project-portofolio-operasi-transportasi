@@ -1,0 +1,28 @@
+# Data besar dan database lokal
+data/raw/*
+!data/raw/README.md
+!data/raw/taxi_zone_lookup.csv
+data/processed/
+*.duckdb
+*.duckdb.wal
+
+# Lingkungan Python, hasil render, dan berkas sementara
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+reports/previews/
+tmp/
+
+# Kredensial dan identitas hosting lokal
+.env
+.env.*
+!.env.example
+.openai/
+.vercel/
+dashboard/.git/
+dashboard/.openai/
+dashboard/.vercel/
+
+# Arsip dibuat ulang atau diunduh melalui Releases
+*.zip
+*.tar.gz
