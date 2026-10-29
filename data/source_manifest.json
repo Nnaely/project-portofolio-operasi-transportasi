@@ -1,0 +1,52 @@
+{
+  "dataset": "NYC TLC Yellow Taxi Trip Records, January\u2013April 2025",
+  "publisher": "NYC Taxi & Limousine Commission",
+  "source_page": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+  "dictionary": "https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf",
+  "terms": "https://www.nyc.gov/home/terms-of-use.page",
+  "retrieved_at_utc": "2026-10-14T15:19:08.751807+00:00",
+  "files": [
+    {
+      "file": "yellow_tripdata_2025-01.parquet",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet",
+      "bytes": 59158238,
+      "sha256": "9af277e4c0d3f9deb30644da822981e1e7df6af58313170fd3aa8a474485488a",
+      "retrieved_at_utc": "2026-10-14T09:29:17.912635+00:00",
+      "rows": 3475226
+    },
+    {
+      "file": "yellow_tripdata_2025-02.parquet",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-02.parquet",
+      "bytes": 60343086,
+      "sha256": "037cba555a73663f3a51a2c27816e40e3feb364769942bdf122b9da31e377bd3",
+      "retrieved_at_utc": "2026-10-14T09:29:13.435093+00:00",
+      "rows": 3577543
+    },
+    {
+      "file": "yellow_tripdata_2025-03.parquet",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-03.parquet",
+      "bytes": 69964745,
+      "sha256": "20c4b77cce457b7cfdae77c5069ca7dc91c167f876a41467f4502ab69487a186",
+      "retrieved_at_utc": "2026-10-14T09:29:18.348768+00:00",
+      "rows": 4145257
+    },
+    {
+      "file": "yellow_tripdata_2025-04.parquet",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-04.parquet",
+      "bytes": 67352824,
+      "sha256": "6f98938de9380a3f85600533816f0dc0e6d9b5b210e485d623952bac599bbe28",
+      "retrieved_at_utc": "2026-10-14T09:29:10.944758+00:00",
+      "rows": 3970553
+    },
+    {
+      "file": "taxi_zone_lookup.csv",
+      "url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv",
+      "bytes": 12331,
+      "sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed",
+      "retrieved_at_utc": "2026-10-14T09:29:11.853109+00:00",
+      "rows": 265
+    }
+  ],
+  "version_note": "TLC monthly files have no immutable version label. SHA256 hashes pin the exact downloaded bytes; future source revisions may change results.",
+  "redistribution": "Raw Parquet and row-level derived files are omitted from the portable portfolio package."
+}
